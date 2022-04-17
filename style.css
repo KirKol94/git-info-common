@@ -85,3 +85,10 @@ p::first-letter {
         padding: 8px;
     }
 }
+
+/* Image */
+.description .git-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
