@@ -8,11 +8,15 @@ header {
     color: white;
     .description {
         display: flex;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+            letter-spacing: 6px;
+            font-weight: 800;
+        }
         ul {
-            border-left: 1px solid white;
             margin-left: 16px;
             li {
-                list-style: none;
                 margin-bottom: 16px;
                 margin-left: 16px;
                 &:last-child {
@@ -20,11 +24,25 @@ header {
                 }
             }
         }
+        @media screen and (min-width: 769px) {
+            flex-direction: row;
+            align-items: center;
+            h1 {
+                text-align: left;
+                letter-spacing: normal;
+            }
+            ul {
+                border-left: 1px solid white;
+                li {
+                    list-style: none;
+                }
+            }
+        }
     }
     input {
         padding: 8px;
         margin-top: 16px;
-        width: 30%;
+        width: 300px;
         border: none;
         border-radius: 8px;
         outline: none;
