@@ -1,0 +1,13 @@
+.container {
+    margin: 20px auto;
+    width: 1024px;
+    ul {
+        li {
+            margin-bottom: 16px;
+            b {
+                padding: 3px;
+                background-color: rgba(255, 0, 0, 0.374);
+            }
+        }
+    }
+}
