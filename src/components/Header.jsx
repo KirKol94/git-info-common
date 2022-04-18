@@ -9,14 +9,14 @@ const Header = ({ searchValue, setSearchValue }) => {
 
   return (
     <header>
-      <div className="description">
+      {!searchValue && <div className="description">
         <h1>Git / Git Hub</h1>
         <ul>
           <li>Справочник по командам Git</li>
           <li>Командная разработка с помощью Git Hub</li>
           <li>Поиск по командам</li>
         </ul>
-      </div>
+      </div>}
 
       <input
         type="text"
