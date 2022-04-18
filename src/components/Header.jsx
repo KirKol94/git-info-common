@@ -1,7 +1,12 @@
 import React from 'react'
 import '../style/Header.scss'
 
-const Header = () => {
+const Header = ({ searchValue, setSearchValue }) => {
+  const onChangeInput = (event) => {
+    const { value } = event.target
+    setSearchValue(value)
+  }
+
   return (
     <header>
       <div className="description">
@@ -12,7 +17,14 @@ const Header = () => {
           <li>Поиск по командам</li>
         </ul>
       </div>
-      <input type="text" placeholder='command' />
+
+      <input
+        type="text"
+        name='search'
+        value={searchValue}
+        onChange={onChangeInput}
+        placeholder='command'
+      />
     </header>
   )
 }

@@ -2,11 +2,15 @@ import React from 'react'
 import { commands } from '../db/db'
 import '../style/CommandList.scss'
 
-const CommandList = () => {
+const CommandList = ({ searchValue }) => {
+  const array = commands.filter(
+    (c) =>
+      c.command?.toLowerCase().includes(searchValue.toLowerCase())
+  );
   return (
     <div className="container">
       <ul>
-        {commands.map((c, i) => (
+        {array.map((c, i) => (
           <li key={i}>
             <b>{c.command}</b> <span>{c.about}</span>
           </li>
