@@ -1,3 +1,1 @@
-# Учебник по использованию git / git hub
-## Совместный проект
-[Сайт тут](https://kirkol94.github.io/git-info-common/)
+# Общий проект для практической работы с Git / Git Hub / React 
