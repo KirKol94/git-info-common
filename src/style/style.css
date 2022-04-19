@@ -94,3 +94,12 @@ p::first-letter {
     height: 100px;
     margin-right: 10px;
 }
+
+/* Container */
+
+.command_examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
