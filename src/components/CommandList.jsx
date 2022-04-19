@@ -10,6 +10,8 @@ const CommandList = ({ searchValue }) => {
   return (
     <main>
       <div className="container">
+        {array.length === 0 && <span>Ничего не найдено :(</span>}
+
         <ul>
           {array.map((c, i) => (
             <li key={i}>
