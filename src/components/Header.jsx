@@ -10,9 +10,10 @@ const Header = ({ searchValue, setSearchValue }) => {
   return (
     <header>
       {!searchValue && <div className="description">
-        <h1>Git / Git Hub</h1>
+        <h1>Git / GitHub</h1>
         <ul>
           <li>Справочник по командам Git</li>
+          <li>Командная разработка с помощью GitHub</li>
           <li>Поиск по командам</li>
         </ul>
       </div>}
