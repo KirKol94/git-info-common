@@ -13,7 +13,6 @@ const Header = ({ searchValue, setSearchValue }) => {
         <h1>Git / Git Hub</h1>
         <ul>
           <li>Справочник по командам Git</li>
-          <li>Командная разработка с помощью Git Hub</li>
           <li>Поиск по командам</li>
         </ul>
       </div>}
