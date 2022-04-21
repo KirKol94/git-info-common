@@ -1,6 +1,6 @@
-import React from 'react'
-import { commands } from '../db/db'
-import '../style/CommandList.scss'
+import React from 'react';
+import { commands } from '../db/db';
+import '../style/CommandList.scss';
 
 const CommandList = ({ searchValue }) => {
   const array = commands.filter(
@@ -9,7 +9,7 @@ const CommandList = ({ searchValue }) => {
   );
   return (
     <main>
-      <div className="container">
+      <div className='container'>
         {array.length === 0 && <span>Ничего не найдено :(</span>}
 
         <ul>
@@ -21,7 +21,7 @@ const CommandList = ({ searchValue }) => {
         </ul>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default CommandList
+export default CommandList;

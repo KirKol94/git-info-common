@@ -1,15 +1,15 @@
-import React from 'react'
-import '../style/Header.scss'
+import React from 'react';
+import '../style/Header.scss';
 
 const Header = ({ searchValue, setSearchValue }) => {
   const onChangeInput = (event) => {
-    const { value } = event.target
-    setSearchValue(value)
-  }
+    const { value } = event.target;
+    setSearchValue(value);
+  };
 
   return (
     <header>
-      {!searchValue && <div className="description">
+      {!searchValue && <div className='description'>
         <h1>Git / GitHub</h1>
         <ul>
           <li>Справочник по командам Git</li>
@@ -20,14 +20,14 @@ const Header = ({ searchValue, setSearchValue }) => {
       </div>}
 
       <input
-        type="text"
+        type='text'
         name='search'
         value={searchValue}
         onChange={onChangeInput}
         placeholder='command'
       />
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
